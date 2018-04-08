@@ -24,7 +24,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
-# for heroku deployment
+# for heroku deployment	
 gem 'rails_12factor', group: :production
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -39,10 +39,15 @@ gem 'rails_12factor', group: :production
 # gem 'debugger', group: [:development, :test]
 gem 'figaro'
 gem 'puma' #application server
-group :development do
-  gem 'capistrano' #deployment tool
-  gem 'capistrano3-puma'
-  gem 'capistrano-rails', require: false
-  gem 'capistrano-bundler', require: false
-  gem 'capistrano-rvm'
-end
+
+# database configurations
+gem 'pg', :group => :production
+gem 'mysql2' , :group => [:development, :test]
+
+# group :development do
+#   gem 'capistrano' #deployment tool
+#   gem 'capistrano3-puma'
+#   gem 'capistrano-rails', require: false
+#   gem 'capistrano-bundler', require: false
+#   gem 'capistrano-rvm'
+# end
