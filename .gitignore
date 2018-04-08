@@ -16,5 +16,4 @@
 /tmp
 
 # Ignore config folder files
-/config/database.yml
 /config/secrets.yml
