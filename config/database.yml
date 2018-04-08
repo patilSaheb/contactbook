@@ -9,6 +9,13 @@
 # And be sure to use new-style password hashing:
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 #
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password: 123
+  socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
@@ -46,8 +53,8 @@ test:
 #   username: contactbook
 #   password: <%= ENV['CONTACTBOOK_DATABASE_PASSWORD'] %>
 
-production: &default
-  adapter: postgresql
-  database: contactbook_production
-  pool: 5
-  timeout: 5000
+production: 
+      adapter: postgresql
+      database: contactbook_production
+      pool: 5
+      timeout: 5000
