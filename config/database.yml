@@ -53,8 +53,9 @@ test:
 #   username: contactbook
 #   password: <%= ENV['CONTACTBOOK_DATABASE_PASSWORD'] %>
 
-production: 
+production:       
       adapter: postgresql
       database: contactbook_production
+      host: '/var/run/postgres' 
       pool: 5
       timeout: 5000
