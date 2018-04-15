@@ -41,7 +41,7 @@ gem 'figaro'
 gem 'puma' #application server
 
 # database configurations
-gem 'pg', :group => :production
+gem 'pg', '~> 0.11', :group => :production
 
 # group :development do
 #   gem 'capistrano' #deployment tool

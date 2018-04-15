@@ -58,7 +58,7 @@ GEM
     minitest (5.11.3)
     multi_json (1.13.1)
     mysql2 (0.3.21)
-    pg (1.0.0)
+    pg (0.21.0)
     polyglot (0.3.5)
     puma (3.11.3)
     rack (1.5.5)
@@ -128,7 +128,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mysql2 (~> 0.3.18)
-  pg
+  pg (~> 0.11)
   puma
   rails (= 4.1.0)
   rails_12factor
